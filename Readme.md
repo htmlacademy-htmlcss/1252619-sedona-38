@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Lobanov](https://up.htmlacademy.ru/htmlcss/38/user/1252619).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Зотова](https://htmlacademy.ru/profile/id1079951).
 
 ---
 
