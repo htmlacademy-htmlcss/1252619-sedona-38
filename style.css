@@ -1,84 +1,138 @@
 @font-face {
-  font-family: "PT Sans";
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
   font-family: "PT Sans";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+
   font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Sans";
+
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+
   font-size: 18px;
   line-height: 21px;
-  background: #F2F2F2;
-  color: black;
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+
+  background: #f2f2f2;
+}
+
+.wrapper {
+  position: relative;
+
+  display: grid;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+
+  background: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
+  display: grid;
+
   color: black;
-  background: #F2F2F2;
+
+  background: #f2f2f2;
 }
 
-.navigation-link {
-  font-family: "PT Sans", sans-serif;
-  line-height: 24px;
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+
   font-weight: 700;
   font-size: 20px;
-  color: inherit;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
   text-align: center;
+  color: inherit;
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 10px auto 0 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
 .advantage-list {
-  text-align: center;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 28px;
+  text-align: center;
   text-transform: uppercase;
 }
-.advantage-description{
-  font-size: 18px;
+
+.advantage-description {
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
   line-height: 21px;
 }
+
 .service-item {
+  font-style: normal;
+  font-weight: 700;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 28px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
+
 .search {
-  font-size: 30px;
   font-style: normal;
   font-weight: 700;
+  font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .search-button {
-  font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .subscribe {
   text-align: center;
 }
+
 .subscribe-button {
   align-items: center;
+}
+
+.advantage-content {
+  display: flex;
 }
