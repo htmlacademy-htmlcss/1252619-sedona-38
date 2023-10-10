@@ -58,10 +58,9 @@
         <div class="filter-container" data-test="filter">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-
-            <fieldset class="fil-group filter-group-check">
-              <legend class="fil-container">Инфроструктура:</legend>
-              <ul class="fil-list control-list">
+            <fieldset class="filter-group filter-group-check">
+              <legend class="filter-container">Инфроструктура:</legend>
+              <ul class="filter-list control-list">
                 <li class="control-item">
                   <label class="control-label" for="pool">
                     <input class="control-input" id="pool" type="checkbox" name="pool" checked>
@@ -105,10 +104,8 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset class="filter-group filter-group-range">
               <legend class="filter-title">Стоимость, ₽:</legend>
-
               <div class="range">
                 <div class="range-input-container">
                   <div class="range-item">
@@ -121,7 +118,7 @@
                   </div>
                 </div>
                 <div class="range-scale">
-                  <div class="range-bar" style="width: 79%;">
+                  <div class="range-bar" width: 79%>
                     <button class="range-toggle-btn range-toggle-btn-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -139,7 +136,6 @@
           </form>
         </div>
       </section>
-      <img class="filter-image" src="img/index2catalog.jpg" alt="catalog">
 
       <section class="catalog" data-test="catalog">
         <div class="catalog-finding">
@@ -181,8 +177,8 @@
               <button class="product-favorites button button-light" type="button">Избраное</button>
               <p class="product-rating-star product-rating-star-4">
                 <span class="visually-hidden">4 звезды</span>
-              </p>
               <p class="product-rating-text">Рейтинг 8,5</p>
+              <img src="img/Звёзды.png" alt="4 Звезды Отель 1">
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
@@ -197,6 +193,7 @@
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="product-rating-text">Рейтинг 9,2</p>
+              <img src="img/Звёзды.png" alt="4 Звезды Отель 1">
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
@@ -211,6 +208,7 @@
                 <span class="visually-hidden">3 звезды</span>
               </p>
               <p class="product-rating-text">Рейтинг 6,9</p>
+              <img src="img/3звезды.png" alt="3 звезды">
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
@@ -225,6 +223,7 @@
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p class="product-rating">Рейтинг 5</p>
+              <img src="img/2Звёзды.png" alt="2 звезды">
             </li>
           </ul>
           <ul class="pogination">
@@ -250,14 +249,13 @@
         </div>
       </section>
 
-      <section class="subscribe subscribe-home" data-test="subscribe">
+      <section class="search" data-test="search">
         <h2 class="subscribe-title page-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-text page-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
           <input class="subscribe-input field" id="e-mail" name="e-mail" placeholder="e-mail" required>
-          <button class="subscribe-button button button-light" type="submit">ПОДПИСАТЬСЯ"</button>
-          <img src="img/rocktwo.jpg" width="1200" height="415" alt="blur">
+          <button class="subscribe-button button button-light" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
     </main>

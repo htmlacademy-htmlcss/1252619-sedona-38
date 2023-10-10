@@ -16,7 +16,7 @@
       <nav class="main-van">
         <ul class="navigation-list">
           <li class="site-navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="site-navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="user-link user-link-favorites" href="#">
+            <a class="user-link user-link-favorite" href="#">
               <span class="visually-hidden">Избраное</span>
               <span class="user-link-favorites-num">12</span>
             </a>
@@ -44,12 +44,10 @@
     <main class="main main-idex" data-test="main">
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <figure class="tophero">
-          <img class="top" src="img/background.jpg" alt="Главная">
-        </figure>
+        <img class="Welcom" src="img/svg/welcome.svg" width="485px" height="352px" alt="Приветсвие" ;>
       </section>
       <section class="advantage" data-test="advantage">
-        <div>
+        <div class="vision">
           <h2 class="advantage-title page-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantage-text page-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
@@ -59,11 +57,9 @@
               <h3 class="advantage-subtitle blocks-title">Настоящий городок</h3>
               <p class="advantage-description block-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <figure class="advantage-image">
-              <div class="imgrock">
-                <img src="img/realhouse.jpg" alt="Реальная Гора">
-              </div>
-            </figure>
+            <div class="realhouse">
+              <img class="flag" src="img/realhouse.jpg" width="800px" alt="Реальная Гора">
+            </div>
           </li>
           <li class="advantage-list">
             <div class="advantages-content">
@@ -84,12 +80,10 @@
             </div>
           </li>
           <li class="advantage-item advantage-item-full advantage-item-rest">
-            <div class="advantage-content">
-              <h3 class="advantage-subtitle blocks-title">Там есть мост дьявола</h3>
-              <p class="advantage-description block-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              <figure>
-                <img src="img/rock.jpg" alt="Фото на мост дьявола">
-              </figure>
+            <div class="rock">
+              <h3 class="advantage-subtitle blocks-title bridge-rock">Там есть мост дьявола</h3>
+              <p class="advantage-description block-text bridge-rock">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <img src="img/rock.jpg" width="800px" alt="Фото на мост дьявола">
             </div>
           </li>
         </ul>
@@ -104,22 +98,22 @@
           <li class="service-item service-item-house">
             <h3 class="service-subtitle blocks-title">Жильё</h3>
             <p class="service-description block-text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
-            <figure class="imghome">
-              <img src="img/svg/home.svg">
+            <figure class="home">
+              <ig src="img/svg/home.svg" alt="Дом">
             </figure>
           </li>
           <li class="service-item service-item-food">
             <h3 class="service-subtitle blocks-title">Еда</h3>
             <p class="advantage-description block-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            <figure class="imgfood">
-              <img src="img/svg/food.svg">
+            <figure class="food">
+              <ig src="img/svg/food.svg" alt="food">
             </figure>
           </li>
           <li class="service-item service-item-souvenirs">
             <h3 class="service-subtitle block-text">Сувениры</h3>
             <p class="service-description block-text">Не только китайского, но и настоящего местного производства!</p>
-            <figure class="imgsouvenir">
-              <img src="img/svg/souvenir.svg">
+            <figure class="souvenir">
+              <ig src="img/svg/souvenir.svg" alt="souvenir">
             </figure>
           </li>
         </ul>
@@ -137,9 +131,6 @@
           <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
           <input class="subscribe-input field" id="e-mail" name="e-mail" placeholder="e-mail" required>
           <button class="subscribe-button button button-light" type="submit">ПОДПИСАТЬСЯ"</button>
-          <div class="imgbackground">
-            <img src="img/rocktwo.jpg" width="1200" height="415" alt="blur">
-          </div>
         </form>
       </section>
     </main>
