@@ -1,0 +1,293 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Sans";
+
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Sans";
+
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0 40px;
+
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+  color: #333333;
+
+  background: #f2f2f2;
+}
+
+.wrapper {
+  position: relative;
+
+  display: grid;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+
+  background: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navigation-link-current {
+  text-decoration: underline;
+
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 21px;
+}
+
+.navigation-link {
+  display: inline-block;
+  padding: 19px 0;
+
+  font-weight: 700px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-link {
+  position: relative;
+
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+
+  color: #000000;
+  text-decoration: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.user-link-search {
+  background-image: url("/img/svg/search.svg");
+}
+
+.user-link-favorite {
+  background-image: url("/img/svg/favorit.svg");
+}
+
+.user-link-favorites-num {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+
+  background-color: #7db54f;
+  border-radius: 10ssx;
+}
+
+.hero {
+  width: 1200px;
+  height: 485px;
+
+  text-align: center;
+
+  background-color: #000000;
+  background-image: url("img/background.jpg"), url("img/divider.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.vision {
+  text-align: center;
+}
+
+.realhouse {
+  text-align: end;
+
+  background-color: #82b3d3;
+}
+
+.blocks-title {
+  text-align: center;
+}
+
+.advantage-list {
+  text-align: center;
+}
+
+.advantage-subtitle:nth-child(2) {
+  background-color: #82b3d3;
+}
+
+.rock {
+  width: 1160px;
+  height: 480px;
+
+  background-color: #82b3d3;
+}
+
+.bridge-rock {
+  text-align: right;
+}
+
+.service-theme {
+  padding: 64px 0;
+
+  text-align: center;
+}
+
+.service-list {
+  text-align: center;
+}
+
+.service-item-house {
+  padding: 10px;
+
+  background-image: url("img/svg/housing.svg");
+  background-repeat: no-repeat;
+}
+
+.service-item-food {
+  padding: 10px;
+
+  background-image: url("img/svg/eating.png");
+  background-repeat: no-repeat;
+}
+
+.service-item-souvenirs {
+  padding: 10px;
+
+  background-image: url("img/svg/Advantage-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.search {
+  padding: 96px 304px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.subscribe {
+  text-align: center;
+}
+
+.subscribe-home {
+  width: 1200px;
+  height: 414px;
+  padding: 96px 258px 104px 258px;
+
+  color: #ffffff;
+
+  background-image: url("img/rocktwo.jpg");
+  background-repeat: no-repeat;
+}
+
+.filter {
+  background-image: url("img/index2catalog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #756157;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #756157;
+}
+
+.button-light {
+  background-color: #82b3d3;
+}
+
+.button-light:hover,
+.button-light:focus {
+  background-color: #68a2ca;
+}
+
+.button-light:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82b3d3;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
+
+.button-transparent:hover {
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: transparent;
+}
+
+.button-transparent:focus {
+  background-color: transparent;
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+  opacity: 1;
+}
+
+.button-transparent:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.button:disabled,
+.button-disabled {
+  color: #ffffff;
+
+  background-color: #e5e5e5;
+}
+
+.button-transparent:disabled {
+  color: rgba(255, 255, 255, 0.1);
+
+  background-color: transparent;
+}
