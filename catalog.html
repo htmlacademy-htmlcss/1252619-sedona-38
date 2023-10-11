@@ -10,14 +10,16 @@
 <body>
   <div class="wrapper">
     <header class="page-header" data-test="header">
-      <nav class="menu">
-        <img src="img/brandsedona.png" alt="Логотип">
+      <a class="logo" href="index.html" aria-current="page">
+        <img src="img/brandsedona.png" width="140" height="70" alt="Логотип">
+      </a>
+      <nav class="main-van">
         <ul class="navigation-list">
           <li class="site-navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="site-navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>"
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="site-navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -26,16 +28,17 @@
         <ul class="user-list">
           <li class="user-item">
             <a class="user-link user-link-search" href="#">
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden"></span>
             </a>
           </li>
           <li class="user-item">
-            <a class="user-link user-link-favorites" href="#">
-              <span class="visually-hidden">Избраное</span>
+            <a class="user-link user-link-favorite" href="#">
+              <span class="visually-hidden"></span>
+              <span class="user-link-favorites-num">12</span>
             </a>
           </li>
         </ul>
-        <a class="menu-button button" href="#">Хочу сюда!"</a>
+        <a class="menu-button button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 

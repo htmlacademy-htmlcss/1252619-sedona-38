@@ -385,3 +385,84 @@ body {
 
   background-color: transparent;
 }
+
+/*Каталог*/
+.catalog-finding {
+  display: flex;
+
+  text-align: center;
+
+  gap: 70px;
+}
+
+.view-type {
+  display: flex;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 14px 12px;
+
+  gap: 10px;
+}
+
+.view-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.view-link-tile {
+  background-image: url("/img/svg/Vector.svg");
+}
+
+.view-link-slideshow {
+  background-image: url("/img/svg/V2.png");
+}
+
+.view-link-list {
+  background-image: url("/img/svg/V3.png");
+}
+
+.product-list {
+  display: grid;
+  margin: 0;
+  padding: 0 0 40px;
+
+  list-style: none;
+
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 340px);
+}
+
+.product {
+  display: grid;
+  padding: 20px;
+
+  column-gap: 20px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+
+  grid-template-columns: 1fr 1fr;
+  row-gap: 16px;
+}
+
+.product-img-link {
+  grid-column: 1 / -1;
+}
+
+.catalog-select {
+  display: flex;
+  align-items: center;
+  width: 292px;
+  height: 50px;
+  padding: 14px 20px;
+
+  border-radius: 4px;
+}
