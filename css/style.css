@@ -117,11 +117,11 @@ body {
 }
 
 .user-link-search {
-  background-image: url("../img/svg/search.svg");
+  background-image: url("../images/svg/search.svg");
 }
 
 .user-link-favorite {
-  background-image: url("../img/svg/favorit.svg");
+  background-image: url("../images/svg/favorit.svg");
 }
 
 .user-link-favorites-num {
@@ -140,7 +140,8 @@ body {
   text-align: center;
 
   background-color: #000000;
-  background-image: url("../img/divider.png"), url("../img/background.jpg");
+  background-image: url("../images/divider.png"),
+    url("../images/background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -222,21 +223,21 @@ body {
   align-items: center;
   padding: 10px;
 
-  background-image: url("../img/svg/housing.svg");
+  background-image: url("../images/svg/housing.svg");
   background-repeat: no-repeat;
 }
 
 .service-item-food {
   padding: 10px;
 
-  background-image: url("img/svg/eating.png");
+  background-image: url("images/svg/eating.png");
   background-repeat: no-repeat;
 }
 
 .service-item-souvenirs {
   padding: 10px;
 
-  background-image: url("img/svg/Advantage-icon.svg");
+  background-image: url("images/svg/Advantage-icon.svg");
   background-repeat: no-repeat;
 }
 
@@ -259,13 +260,13 @@ body {
 
   color: #ffffff;
 
-  background-image: url("../img/rocktwo.jpg");
+  background-image: url("../images/rocktwo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .filter {
-  background-image: url("../img/index2catalog.jpg");
+  background-image: url("../images/index2catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -423,15 +424,15 @@ body {
 }
 
 .view-link-tile {
-  background-image: url("../img/tabl.png");
+  background-image: url("../images/tabl.png");
 }
 
 .view-link-slideshow {
-  background-image: url("../img/slide.png");
+  background-image: url("../images/slide.png");
 }
 
 .view-link-list {
-  background-image: url("../img/list.png");
+  background-image: url("../images/list.png");
 }
 
 .product-list {
