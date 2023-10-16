@@ -117,11 +117,11 @@ body {
 }
 
 .user-link-search {
-  background-image: url("/img/svg/search.svg");
+  background-image: url("../img/svg/search.svg");
 }
 
 .user-link-favorite {
-  background-image: url("/img/svg/favorit.svg");
+  background-image: url("../img/svg/favorit.svg");
 }
 
 .user-link-favorites-num {
@@ -140,9 +140,13 @@ body {
   text-align: center;
 
   background-color: #000000;
-  background-image: url("img/background.jpg"), url("img/divider.png");
+  background-image: url("../img/divider.png"), url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: cover;
+}
+
+.hero img {
   background-size: cover;
 }
 
@@ -218,7 +222,7 @@ body {
   align-items: center;
   padding: 10px;
 
-  background-image: url("img/svg/housing.svg");
+  background-image: url("../img/svg/housing.svg");
   background-repeat: no-repeat;
 }
 
@@ -255,12 +259,13 @@ body {
 
   color: #ffffff;
 
-  background-image: url("img/rocktwo.jpg");
+  background-image: url("../img/rocktwo.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .filter {
-  background-image: url("img/index2catalog.jpg");
+  background-image: url("../img/index2catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -418,15 +423,15 @@ body {
 }
 
 .view-link-tile {
-  background-image: url("/img/svg/Vector.svg");
+  background-image: url("../img/tabl.png");
 }
 
 .view-link-slideshow {
-  background-image: url("/img/svg/V2.png");
+  background-image: url("../img/slide.png");
 }
 
 .view-link-list {
-  background-image: url("/img/svg/V3.png");
+  background-image: url("../img/list.png");
 }
 
 .product-list {
