@@ -4,20 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>City of Sedona</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../1252619-sedona-38/css/style.css">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="page-header" data-test="header">
-      <nav class="menu">
-        <img src="img/brandsedona.png" alt="Логотип">
+      <a class="logo" href="index.html" aria-current="page">
+        <img src="img/brandsedona.png" width="140" height="70" alt="Логотип">
+      </a>
+      <nav class="main-van">
         <ul class="navigation-list">
           <li class="site-navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="#">Главная</a>
           </li>
           <li class="site-navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>"
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="site-navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -26,16 +28,17 @@
         <ul class="user-list">
           <li class="user-item">
             <a class="user-link user-link-search" href="#">
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden"></span>
             </a>
           </li>
           <li class="user-item">
-            <a class="user-link user-link-favorites" href="#">
-              <span class="visually-hidden">Избраное</span>
+            <a class="user-link user-link-favorite" href="#">
+              <span class="visually-hidden"></span>
+              <span class="user-link-favorites-num">12</span>
             </a>
           </li>
         </ul>
-        <a class="menu-button button" href="#">Хочу сюда!"</a>
+        <a class="menu-button button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -149,17 +152,17 @@
           <ul class="catalog-view view">
             <li class="view-type">
               <a href="#" class="view-link view-link-tile view-link-active">
-                <span class="visually-hidden">Вид плиткой</span>
+                <span class="visually-hidden"></span>
               </a>
             </li>
             <li class="view-type">
               <a class="view-link view-link-slideshow" href="#">
-                <span class="visually-hidden">Вид слайд-шоу</span>
+                <span class="visually-hidden"></span>
               </a>
             </li>
             <li class="view-type">
               <a class="view-link view-link-list" href="#">
-                <span class="visually-hidden">Вид списком</span>
+                <span class="visually-hidden"></span>
               </a>
             </li>
           </ul>
@@ -251,7 +254,7 @@
 
       <section class="search" data-test="search">
         <h2 class="subscribe-title page-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text page-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-text page-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
           <input class="subscribe-input field" id="e-mail" name="e-mail" placeholder="e-mail" required>
