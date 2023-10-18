@@ -9,20 +9,20 @@
 
 <body>
   <div class="wrapper">
-    <header class="page-header" data-test="header">
+    <header class="header" data-test="header">
       <a class="logo" href="index.html" aria-current="page">
         <img src="images/brandsedona.png" width="140" height="70" alt="Логотип">
       </a>
-      <nav class="main-van">
+      <nav class="main-nav">
         <ul class="navigation-list">
           <li class="site-navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current navigation-list-link" href="#">Главная</a>
           </li>
           <li class="site-navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="navigation-link navigation-list-link" href="#">О Седоне</a>
           </li>
           <li class="site-navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-list-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-list">
@@ -41,51 +41,52 @@
         <a class="menu-button button" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="main main-idex" data-test="main">
+    <main class="main main-index" data-test="main">
       <section class="hero" data-test="hero">
-        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
         <figure>
           <img class="Welcom" src="images/svg/welcome.svg" width="485px" height="352px" alt="Приветсвие">
         </figure>
       </section>
-      <section class="advantage" data-test="advantage">
+      <section class="advantages" data-test="advantages">
         <div class="vision">
-          <h2 class="advantage-title page-title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
-          <p class="advantage-text page-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <h2 class="advantages-title page-title">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</h2>
+          <p class="advantages-text page-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ul class="advantages-item">
-          <li class="advantage-item advantage-item-full">
-            <div class="advantage-content">
-              <h3 class="advantage-subtitle blocks-title real-house">Настоящий <br>городок</h3>
-              <p class="advantage-description block-text real-house">Седона — не аттракцион для туристов,<br> там течёт своя <br> жизнь</p>
+          <li class="advantages-item advantages-item-full">
+            <div class="advantages-content">
+              <h3 class="advantages-subtitle blocks-title real-house">Настоящий <br>городок</h3>
+              <p class="advantages-description block-text real-house">Седона — не аттракцион для туристов,<br> там течёт своя <br> жизнь</p>
             </div>
             <div class="realhouse">
-              <figure><img class="flag" src="images/realhouse.jpg" width="800px" alt="Реальная Гора"></figure>
+              <figure class="advantages-img">
+                <img src="images/realhouse.jpg" width="800px" alt="Реальная Гора">
+              </figure>
             </div>
           </li>
-          <li class="advantage-list">
-            <div class="advantages-content">
+          <li class="advantages-list">
+            <div class="advantages-content card-info">
               <h3 class="advantages-subtitle blocks-title">Небольшая <br>площадь</h3>
-              <p class="advantage-description block-text">Все достопримечательности <br>находятся очень близко</p>
+              <p class="advantages-description block-text">Все достопримечательности <br>находятся очень близко</p>
             </div>
           </li>
-          <li class="advantage-list">
-            <div class="advantage-content">
-              <h3 class="advantage-subtitle blocks-title">Красивая <br>дорога</h3>
-              <p class="advantage-description block-text">Ехать в Седону из Лас-Вегаса <br>совсем не скучно!</p>
+          <li class="advantages-list">
+            <div class="advantages-content card-info">
+              <h3 class="advantages-subtitle blocks-title">Красивая <br>дорога</h3>
+              <p class="advantages-description block-text">Ехать в Седону из Лас-Вегаса <br>совсем не скучно!</p>
             </div>
           </li>
-          <li class="advantage-list">
-            <div class="advantage-content">
-              <h3 class="advantage-subtitle blocks-title">Мало <br>туристов</h3>
-              <p class="advantage-description block-text">Большинство едет в Гранд <br>Каньон и толпится там</p>
+          <li class="advantages-list">
+            <div class="advantages-content card-info">
+              <h3 class="advantages-subtitle blocks-title">Мало <br>туристов</h3>
+              <p class="advantages-description block-text">Большинство едет в Гранд <br>Каньон и толпится там</p>
             </div>
           </li>
-          <li class="advantage-item advantage-item-full advantage-item-rest">
+          <li class="advantages-item advantage-item-full advantage-item-rest">
             <div class="rock">
-              <h3 class="advantage-subtitle blocks-title bridge-rock">Там есть <br>мост дьявола</h3>
-              <p class="advantage-description block-text bridge-rock">Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется</p>
-              <figure>
+              <h3 class="advantages-subtitle blocks-title bridge-rock">Там есть <br>мост дьявола</h3>
+              <p class="advantages-description block-text bridge-rock">Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется</p>
+              <figure class="advantages-img">
                 <img src="images/rock.jpg" width="800px" alt="Фото на мост дьявола">
               </figure>
             </div>
@@ -143,19 +144,19 @@
       <ul class="footer-social social">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">"ВКонтакте</span>
+            <span class="visually-hidden"></span>
             <img src="images/svg/vk.svg" alt="vk">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy ">
-            <span class="visually-hidden">"Telegram</span>
+            <span class="visually-hidden"></span>
             <img src="images/svg/tele.svg" alt="tele">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
+            <span class="visually-hidden"></span>
             <img src="images/svg/yotube.svg" alt="yotube">
           </a>
         </li>
