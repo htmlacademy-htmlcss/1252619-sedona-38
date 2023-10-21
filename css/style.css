@@ -27,16 +27,11 @@ html {
   height: 100%;
 }
 
-main {
-  flex-grow: 1;
-}
-
 body {
   height: 100%;
   margin: 0;
   padding: 0 40px;
 
-  font-size: 18px;
   line-height: 21px;
   font-family: "PT Sans", sans-serif;
   color: #333333;
@@ -99,16 +94,13 @@ body {
 }
 
 .hero {
-  width: 1200px;
-  height: 485px;
+  position: relative;
 
-  text-align: center;
+  padding: 50px 70px 80px;
 
-  background-color: #000000;
   background-image: url("../images/divider.png"),
     url("../images/background.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
   background-size: cover;
 }
 
@@ -197,16 +189,39 @@ body {
 }
 
 .advantages {
-  display: grid;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 1200px;
-  padding: 69px 0;
+
+  list-style: none;
+}
+
+.advantages-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, 400px);
+}
+
+.advantages-img {
+  padding: 50px;
+
+  background-size: cover;
+}
+
+.advantages-item {
+  grid-column: 1;
+}
+
+.advantages-item-full .advantages-content {
+  color: #ffffff;
+
+  background-color: rgba(130, 179, 211, 1);
 }
 
 .advantages-title {
@@ -219,18 +234,49 @@ body {
   text-transform: uppercase;
 }
 
-.advantage-list {
-  display: grid;
-  margin: 0;
+.block-text {
+  text-align: center;
+}
+
+section {
+  display: block;
+}
+
+.advantages-list {
+  width: 0;
   padding: 0;
+}
 
-  list-style: none;
+.advantage-img {
+  background-size: cover;
+}
 
-  grid-template-columns: repeat(auto-fit, 400px);
+.advantages-item {
+  background-color: rgba(130, 179, 211, 0.2);
 }
 
 .advantages-item:nth-child(2n) {
   background-color: rgba(130, 179, 211, 0.12);
+}
+
+.advantages-item-full {
+  display: flex;
+
+  grid-column: 1 / -1;
+}
+
+.advantages-item-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages-item {
+  background-color: rgba(130, 179, 211, 0.2);
+}
+
+.advantages-item-full .advantages-content {
+  color: #ffffff;
+
+  background-color: rgba(130, 179, 211, 1);
 }
 
 .card-info {
@@ -243,11 +289,12 @@ body {
   padding: 80px 85px;
 }
 
-.advantage-subtitle {
-  position: relative;
+.real-house {
+  display: flex;
 
-  width: 175px;
-  padding: 30px;
+  text-align: center;
+
+  background-size: cover;
 }
 
 .advantage-img {
@@ -256,13 +303,20 @@ body {
   margin: 0;
 }
 
-.figure {
-  display: block;
+.advantages-item-full {
+  display: flex;
 
-  margin-block-end: 1em;
-  margin-block-start: 1em;
-  margin-inline-end: 40px;
-  margin-inline-start: 40px;
+  grid-column: 1 / -1;
+}
+
+.advantages-item-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantage-item-full {
+  display: flex;
+
+  grid-column: 1 / -1;
 }
 
 .blocks-title {
@@ -274,13 +328,17 @@ body {
   text-transform: uppercase;
 }
 
-.block-text {
-  margin: 0;
-
-  text-align: center;
+.vision {
+  width: 860px;
+  margin: 0 auto;
+  padding: 70px 0 90px;
 }
 
-.vision {
+.page-text {
+  margin: 0;
+
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -307,7 +365,8 @@ body {
 }
 
 .rock {
-  width: 1160px;
+  display: flex;
+  width: 1200px;
   height: 480px;
 
   background-color: #82b3d3;
@@ -324,7 +383,7 @@ body {
 }
 
 .service-list {
-  display: flex;
+  display: grid;
   margin: 0;
   padding: 0;
 
@@ -335,7 +394,7 @@ body {
 }
 
 .service-title {
-  padding-top: 102px;
+  padding-top: 0;
 }
 
 .service-item {
