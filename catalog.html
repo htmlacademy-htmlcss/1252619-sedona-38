@@ -46,16 +46,14 @@
       <section class="filter">
         <header class="filter-header">
           <h1 class="filter-main-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
+          <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Главная</span>
-              </a>
+            <li class="breadcrumbs-link breadcrumbs-link-current">Гостиница</li>
+            </a>
             </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html" aria-current="page">Гостиница</a>
-            </li>
-          </ul>
+          </ol>
         </header>
 
         <div class="filter-container" data-test="filter">
@@ -108,7 +106,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter-group filter-group-range">
-              <legend class="filter-title">Стоимость, ₽:</legend>
+              <legend>Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-input-container">
                   <div class="range-item">
@@ -132,10 +130,10 @@
                 </div>
               </div>
             </fieldset>
-            <div class="filter-group filter-buttons">
+            <fieldset class="filter-group filter-buttons">
               <button class="filter-submit button button-light" type="submit">Применить</button>
               <button class="filter-reset button button-transparent" type="reset">Сбросить</button>
-            </div>
+            </fieldset>
           </form>
         </div>
       </section>
@@ -180,6 +178,7 @@
               <button class="product-favorites button button-light" type="button">Избраное</button>
               <p class="product-rating-star product-rating-star-4">
                 <span class="visually-hidden">4 звезды</span>
+              </p>
               <p class="product-rating-text">Рейтинг 8,5</p>
               <img src="images/Звёзды.png" alt="4 Звезды Отель 1">
             </li>
@@ -232,28 +231,32 @@
               <img src="images/2Звёзды.png" alt="2 звезды">
             </li>
           </ul>
-          <ul class="pogination">
-            <li class="pogination-item">
-              <a class="pogination-link" href="#" aria-current="page">1</a>
-            </li>
-            <li class="pogination-item">
-              <a class="pogination-link" href="#">2</a>
-            </li>
-            <li class="pogination-item">
-              <a class="pogination-link" href="#">3</a>
-            </li>
-            <li class="pogination-item">
-              <a class="pogination-link" href="#">4</a>
-            </li>
-            <li class="pogination-item">
-              <a class="pogination-link pagination-link-more" href="#" aria-label="Открыть следуюище страницы">...</a>
-            </li>
-            <li class="pogination-item">
-              <a class="pogination-link" href="#">10</a>
-            </li>
-          </ul>
         </div>
       </section>
+
+      <footer class="pagination">
+
+        <ul class="pogination">
+          <li class="pogination-item pagination-w">
+            <a class="pogination-link pagination-w" href="#" aria-current="page">1</a>
+          </li>
+          <li class="pogination-item">
+            <a class="pogination-link" href="#">2</a>
+          </li>
+          <li class="pogination-item">
+            <a class="pogination-link" href="#">3</a>
+          </li>
+          <li class="pogination-item">
+            <a class="pogination-link" href="#">4</a>
+          </li>
+          <li class="pogination-item pagination-w">
+            <a class="pogination-link pagination-link-more pagination-w" href="#" aria-label="Открыть следуюище страницы">...</a>
+          </li>
+          <li class="pogination-item">
+            <a class="pogination-link" href="#">10</a>
+          </li>
+        </ul>
+      </footer>
 
       <section class="search" data-test="search">
         <h2 class="subscribe-title page-title">Подпишитесь на рассылку</h2>
