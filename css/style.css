@@ -782,6 +782,19 @@ body {
   color: #83b3d3;
 }
 
+.social-link:hover,
+.social-link:focus {
+  color: #83b3d3;
+}
+
+.social-link:hover {
+  color: rgba(104, 162, 202, 1);
+}
+
+.social-link:focus {
+  color: rgba(104, 162, 202, 1);
+}
+
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
@@ -794,10 +807,6 @@ body {
   color: #756157;
 }
 
-.footer-phone:active {
-  color: rgba(117, 97, 87, 0.3);
-}
-
 .footer-phone:focus {
   color: rgba(117, 97, 87, 1);
 }
@@ -806,14 +815,19 @@ body {
   color: rgba(117, 97, 87, 1);
 }
 
-.footer-phone:default {
-  color: rgba(0, 0, 0, 1);
-}
-
 .footer-html {
   display: block;
   width: 115px;
   height: 33px;
 
   color: #000000;
+}
+
+.htmlacademy:hover,
+.htmlacademy:focus {
+  color: #756157;
+}
+
+.htmlacademy:active {
+  color: rgba(117, 97, 87, 0.3);
 }
