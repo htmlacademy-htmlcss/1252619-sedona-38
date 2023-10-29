@@ -700,6 +700,15 @@ img {
   background-position: center;
 }
 
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
 .filter-form {
   display: flex;
   flex-wrap: wrap;
@@ -726,7 +735,6 @@ img {
 .filter-buttons {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
   padding-top: 56px;
 
@@ -801,6 +809,17 @@ img {
   background-color: #3f5e72;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+}
+
+.control-input:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+
+.control-input:active + .control-label,
+.control-input:active {
+  opacity: 0.3;
 }
 
 .range-input-container {
@@ -928,6 +947,18 @@ img {
   appearance: none;
 }
 
+.catalog-select:hover,
+.catalog-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #68a2ca;
+}
+
+.catalog-select:disabled {
+  color: rgba(0, 0, 0, 0.3);
+
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
 .view {
   display: grid;
   justify-content: end;
@@ -964,7 +995,16 @@ img {
   background-image: url("../images/svg/view-list.svg");
 }
 
-.view-link-active {
+.view-link-active:hover {
+  border-color: #000000;
+}
+
+.view-link:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.view-link-active:active {
   border-color: #000000;
 }
 
@@ -1107,6 +1147,12 @@ img {
   border-color: transparent;
 }
 
+.pagination-link:not(.pagination-link-more):hover,
+.pagination-link:not(.pagination-link-more):focus {
+  background-color: #68a2ca;
+  box-shadow: inset 0 0 0 1px #82b3d3;
+}
+
 .footer {
   display: grid;
   align-items: start;
@@ -1134,8 +1180,6 @@ img {
   height: 41px;
 
   color: #83b3d3;
-
-  fill: currentColor;
 }
 
 .social-link:hover,
@@ -1144,7 +1188,9 @@ img {
 }
 
 .social-link:active {
-  color: rgba(104, 162, 202, 0.3);
+  opacity: 0.3;
+
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone {
@@ -1166,15 +1212,13 @@ img {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-html {
+.htmlacademy {
   display: block;
   width: 115px;
-  height: 33px;
+  height: 34px;
   margin-top: 3px;
 
   color: #000000;
-
-  fill: currentColor;
 }
 
 .htmlacademy:hover,
@@ -1183,5 +1227,5 @@ img {
 }
 
 .htmlacademy:active {
-  color: rgba(117, 97, 87, 0.3);
+  opacity: 0.3;
 }
