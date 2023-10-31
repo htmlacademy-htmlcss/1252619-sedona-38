@@ -81,6 +81,15 @@ img {
   clip-path: inset(100%);
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .button {
   display: inline-block;
   margin: 0;
@@ -287,7 +296,7 @@ img {
   text-underline-offset: 24px;
 }
 
-.menu-button {
+.navigation-button {
   width: 160px;
   margin-top: 14px;
 }
@@ -459,7 +468,7 @@ img {
   text-align: center;
 }
 
-.item-title {
+.block-title {
   margin: 0 0 30px;
 
   font-size: 24px;
@@ -468,7 +477,7 @@ img {
   text-transform: uppercase;
 }
 
-.item-text {
+.block-text {
   margin: 0;
 }
 
@@ -499,7 +508,7 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.item-text {
+.block-text {
   margin: 0;
 }
 
@@ -1124,11 +1133,31 @@ img {
   border-radius: 4px;
 }
 
-.pagination {
+.hotel-card-title:hover,
+.hotel-card-title:focus {
+  color: rgba(117, 97, 87, 1);
+}
+
+.hotel-card-title:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.hotel-card-title:active .pagination {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 39px 0 0;
+
+  list-style: none;
+
+  gap: 8px;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 39px 0;
 
   list-style: none;
 
@@ -1173,10 +1202,16 @@ img {
   border-color: transparent;
 }
 
-.pagination-link:not(.pagination-link-more):hover,
-.pagination-link:not(.pagination-link-more):focus {
+.pagination-link:not(.pagination-link-current):hover,
+.pagination-link:not(.pagination-link-current):focus {
   background-color: #68a2ca;
   box-shadow: inset 0 0 0 1px #82b3d3;
+}
+
+.pagination-link:not(.pagination-link-current):active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82b3d3;
 }
 
 .footer {
@@ -1253,5 +1288,26 @@ img {
 }
 
 .htmlacademy:active {
-  opacity: 0.3;
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 800px;
+  height: 800px;
+  margin: auto;
+  padding: 64px 70px;
+
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  opacity: 0.6;
+}
+
+.modal-title {
+  color: #000000;
 }
