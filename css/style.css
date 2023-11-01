@@ -441,22 +441,22 @@ img {
   padding-top: 103px;
 }
 
-.advantages-description::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-
-  width: 60px;
-  height: 2px;
-
-  transform: translateX(-50%);
-}
-
 .advantages-vision {
   padding: 70px 70px 90px;
 
   text-align: center;
+}
+
+.advantages-subtitle::after {
+  content: "";
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100px;
+  height: 2px;
+
+  background-color: rgba(117, 97, 87, 1);
 }
 
 .card-info {
@@ -490,14 +490,8 @@ img {
 .advantage-subtitle::after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: 50%;
-
-  width: 60px;
-  height: 2px;
 
   background-color: rgba(0, 0, 0, 0.3);
-  transform: translateX(-50%);
 }
 
 .adavantages-item-full .advantage-subtitle {
