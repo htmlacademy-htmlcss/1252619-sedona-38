@@ -449,14 +449,15 @@ img {
 
 .advantages-subtitle::after {
   content: "";
+  position: absolute;
+  left: 30%;
 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100px;
+  width: 60px;
   height: 2px;
+  margin: 40px;
 
   background-color: rgba(117, 97, 87, 1);
+  transform: translateX(-50%);
 }
 
 .card-info {
@@ -469,6 +470,8 @@ img {
 }
 
 .block-title {
+  position: relative;
+
   margin: 0 0 30px;
 
   font-size: 24px;
@@ -485,13 +488,6 @@ img {
   position: relative;
 
   padding-bottom: 30px;
-}
-
-.advantage-subtitle::after {
-  content: "";
-  position: absolute;
-
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .adavantages-item-full .advantage-subtitle {
