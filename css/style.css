@@ -314,7 +314,7 @@ img {
   position: relative;
 
   display: block;
-  width: 44px;
+  width: 56px;
   min-height: 66px;
 
   text-align: right;
@@ -1538,7 +1538,7 @@ img {
   text-align: center;
 
   -moz-appearance: textfield;
-       appearance: none;
+  appearance: none;
 }
 
 .modal-input-number::-webkit-outer-spin-button,
