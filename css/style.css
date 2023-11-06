@@ -38,7 +38,7 @@ body {
   font-family: "PT Sans", sans-serif;
   color: #333333;
 
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 img {
@@ -81,15 +81,6 @@ img {
   clip-path: inset(100%);
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
-  color: rgba(117, 97, 87, 1);
-}
-
-.navigation-link:active {
-  color: rgba(117, 97, 87, 0.3);
-}
-
 .button {
   display: inline-block;
   margin: 0;
@@ -130,8 +121,6 @@ img {
 }
 
 .button-light:active {
-  color: rgba(255, 255, 255, 0.3);
-
   background-color: #82b3d3;
 }
 
@@ -153,8 +142,6 @@ img {
 }
 
 .button-transparent:active {
-  color: rgba(255, 255, 255, 0.3);
-
   background-color: transparent;
   box-shadow: none;
 }
@@ -180,7 +167,7 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans , sans-serif";
+  font-family: "PT Sans", sans-serif;
   color: #000000;
 
   background-color: #f2f2f2;
@@ -232,9 +219,10 @@ img {
 }
 
 .page-text {
+  margin: 0;
+
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
 
 .main-header {
@@ -251,7 +239,7 @@ img {
 .navigation-logo {
   display: block;
   width: 140px;
-  margin-bottom: -6;
+  margin-bottom: -6px;
 }
 
 .logo img {
@@ -296,6 +284,15 @@ img {
   text-underline-offset: 24px;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .navigation-button {
   width: 160px;
   margin-top: 14px;
@@ -304,6 +301,7 @@ img {
 .user-menu {
   display: flex;
   flex-wrap: wrap;
+  max-width: 150px;
   margin: 0 20px 0 auto;
   padding: 0;
 
@@ -315,7 +313,7 @@ img {
 
   display: block;
   width: 56px;
-  min-height: 66px;
+  min-height: 64px;
 
   text-align: right;
 
@@ -326,13 +324,11 @@ img {
 
 .user-link:hover {
   background-color: rgba(131, 179, 211, 0.2);
-  opacity: 0.6;
 }
 
 .user-link:focus {
   background-color: rgba(131, 179, 211, 0.12);
   outline: none;
-  opacity: 0.6;
 }
 
 .user-link:active {
@@ -373,7 +369,7 @@ img {
 
   padding: 50px 70px 80px;
 
-  background-image: url("../images/divider.png"),
+  background-image: url("../images/svg/divider.svg"),
     url("../images/background.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -447,14 +443,20 @@ img {
   text-align: center;
 }
 
+.advantage-subtitle {
+  position: relative;
+
+  padding-bottom: 50px;
+}
+
 .advantages-subtitle::after {
   content: "";
   position: absolute;
-  left: 30%;
+  bottom: 0;
+  left: 50%;
 
   width: 60px;
   height: 2px;
-  margin: 40px;
 
   background-color: rgba(117, 97, 87, 1);
   transform: translateX(-50%);
@@ -490,7 +492,7 @@ img {
   padding-bottom: 30px;
 }
 
-.adavantages-item-full .advantage-subtitle {
+.advantages-item-full .advantages-subtitle {
   color: #ffffff;
 }
 
@@ -618,6 +620,7 @@ img {
   width: 232px;
 
   font-size: 20px;
+  line-height: 36px;
 
   border-radius: 0 4px 4px 0;
 }
