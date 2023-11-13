@@ -32,7 +32,6 @@ body {
   margin: 0;
   padding: 0 40px;
 
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   font-family: "PT Sans", sans-serif;
@@ -220,7 +219,7 @@ img {
 
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 34px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -229,7 +228,7 @@ img {
   margin: 0;
 
   font-size: 22px;
-  line-height: 26px;
+  line-height: 27px;
 }
 
 .main-header {
@@ -368,8 +367,9 @@ img {
 .hero {
   position: relative;
 
-  padding: 50px 70px 80px;
+  padding: 29px 70px 64px;
 
+  background-color: #343e47;
   background-image: url("../images/svg/divider.svg"),
     url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -385,7 +385,7 @@ img {
 }
 
 .advantages-vision {
-  padding: 70px 70px 90px;
+  padding: 70px 73px 64px;
 }
 
 .advantages-list {
@@ -564,7 +564,7 @@ img {
 }
 
 .subscription {
-  padding: 96px 70px 104px;
+  padding: 54px 70px 104px;
 
   text-align: center;
 }
@@ -587,7 +587,7 @@ img {
 }
 
 .subscription-text {
-  margin-bottom: 55px;
+  margin-bottom: 54px;
 }
 
 .subscription-form {
@@ -623,7 +623,7 @@ img {
 
   color: #ffffff;
 
-  background-color: #5c84ab;
+  background-color: #343e47;
   background-image: url("../images/index2catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -732,12 +732,12 @@ img {
 }
 
 .filter-name {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
   padding: 0;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .control-list {
@@ -1286,6 +1286,10 @@ img {
   cursor: pointer;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal-close-button:hover {
   background-color: #e6e6e6;
 }
@@ -1582,4 +1586,16 @@ img {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.field[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: texfield;
+}
+
+.field[type="number"]::-webkit-inner-spin-button,
+.field[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
