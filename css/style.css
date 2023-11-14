@@ -385,7 +385,7 @@ img {
 }
 
 .advantages-vision {
-  padding: 70px 73px 64px;
+  padding: 70px 70px 117px;
 }
 
 .advantages-list {
@@ -463,7 +463,7 @@ img {
   width: 100%;
   max-width: 400px;
   min-height: 385px;
-  padding: 115px 80px 85px;
+  padding: 112px 85px 111px;
 
   text-align: center;
 }
@@ -502,7 +502,7 @@ img {
 }
 
 .service-intro {
-  padding: 64px 70px;
+  padding: 66px 70px;
 
   text-align: center;
 }
@@ -543,7 +543,7 @@ img {
 }
 
 .search {
-  padding: 96px 70px;
+  padding: 65px 70px;
 
   text-align: center;
 }
@@ -564,7 +564,7 @@ img {
 }
 
 .subscription {
-  padding: 54px 70px 104px;
+  padding: 127px 70px 104px;
 
   text-align: center;
 }
