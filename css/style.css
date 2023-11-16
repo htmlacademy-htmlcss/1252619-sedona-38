@@ -367,7 +367,7 @@ img {
 .hero {
   position: relative;
 
-  padding: 29px 70px 64px;
+  padding: 27px 70px 64px;
 
   background-color: #343e47;
   background-image: url("../images/svg/divider.svg"),
@@ -386,6 +386,8 @@ img {
 
 .advantages-vision {
   padding: 70px 70px 117px;
+
+  text-align: center;
 }
 
 .advantages-list {
@@ -432,12 +434,6 @@ img {
 
 .advantages-item-full .advantages-content {
   padding-top: 103px;
-}
-
-.advantages-vision {
-  padding: 70px 70px 90px;
-
-  text-align: center;
 }
 
 .advantage-subtitle {
