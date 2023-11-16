@@ -569,6 +569,12 @@ img {
   text-align: center;
 }
 
+.subscription-catalog {
+  padding: 56px 70px 104px;
+
+  text-align: center;
+}
+
 .subscription-home {
   color: #ffffff;
 
@@ -1172,6 +1178,15 @@ img {
   display: grid;
   align-items: start;
   padding: 45px 70px 32px;
+
+  gap: 20px;
+  grid-template-columns: auto 1fr auto;
+}
+
+.footer-catalog {
+  display: grid;
+  align-items: start;
+  padding: 43px 70px 32px;
 
   gap: 20px;
   grid-template-columns: auto 1fr auto;
